@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """it defines a class Square."""
 
 
@@ -37,4 +38,3 @@ class Square:
             print("")
         if self.__size == 0:
             print("")
-
