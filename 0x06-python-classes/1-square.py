@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """it defines a class Square."""
 
 
