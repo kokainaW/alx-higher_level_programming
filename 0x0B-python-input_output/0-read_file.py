@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-"""Task 0"""
 def read_file(filename=""):
-    with open(filename, 'r') as f:
-        for li in f:
+    with open(filename, 'r') as z:
+        for li in z:
             print(li, end="")
-    f.closed
+    z.closed
