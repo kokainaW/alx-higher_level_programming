@@ -1,6 +1,12 @@
 #!/usr/bin/python3
+"""
+    read_file()
+"""
+
+
 def read_file(filename=""):
-    with open(filename, 'r') as f:
-        for li in f:
-            print(li, end="")
-    f.closed
+    """
+        read_file reads teaxt file and prints to stdout
+    """
+    with open(filename, "r", encoding='utf-8') as a_file:
+        print("{}".format(a_file.read()), end="")
