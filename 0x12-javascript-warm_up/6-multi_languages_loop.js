@@ -1,7 +1,7 @@
 #!/usr/bin/node
-// prints 3 lines
-const langs = ['C is fun', 'Python is cool', 'Javascript is amazing'];
+// loop through and print strings
 
-for (let i = 0; i < 3; i++) {
+const langs = ['C is fun', 'Python is cool', 'Javascript is amazing'];
+for (let i = 0; i < langs.length; i++) {
   console.log(langs[i]);
 }
