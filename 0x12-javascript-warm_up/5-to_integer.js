@@ -1,10 +1,8 @@
 #!/usr/bin/node
-/*
-  prints 3 lines: (like 1-multi_languages.js) but
-  by using an array of string and a loop
-*/
-const langs = ['C is fun', 'Python is cool', 'Javascript is amazing'];
+// prints two arguments passed to it
 
-for (let i = 0; i < 3; i++) {
-  console.log(langs[i]);
+if (isNaN(process.argv[2])) {
+  console.log('Not a number');
+} else {
+  console.log('My number: ' + parseInt(process.argv[2]));
 }
