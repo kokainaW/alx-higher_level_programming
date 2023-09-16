@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-""" 
-it prints the State object with the name passed as argument from the database
+""" Print the State object with the name passed as argument from the database
 """
 import sys
 from model_state import Base, State

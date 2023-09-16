@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-""" 
-it prints the first State object from the database hbtn_0e_6_usa
+""" Print the first State object from the database hbtn_0e_6_usa
 """
 import sys
 from model_state import Base, State
