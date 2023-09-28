@@ -1,21 +1,22 @@
 #!/usr/bin/python3
-"""Finds a peak in a list of integers"""
+"""6-peak script"""
+
+
+def divide(array, low, high):
+    """divide and conquer"""
+
+    mid = int((high + low)/2)
+    if array[mid-1] <= array[mid] >= array[mid+1]:
+        return array[mid]
+    elif array[mid] > array[mid+1]:
+        return divide(array, low, mid-1)
+    elif array[mid] < array[mid+1]:
+        return divide(array, mid+1, high)
 
 
 def find_peak(list_of_integers):
-    list_ = list_of_integers
-    # if there is no list of integers return None
-    if list_ == []:
-        return None
-    length = len(list_)
+    """Find peak of a list"""
 
-    start, end = 0, length - 1
-    while start < end:
-        mid = start + (end - start) // 2
-        if list_[mid] > list_[mid - 1] and list_[mid] > list_[mid + 1]:
-            return list_[mid]
-        if list_[mid - 1] > list_[mid + 1]:
-            end = mid
-        else:
-            start = mid + 1
-    return list_[start]
+    if not list_of_integers:
+        return None
+    return divide(list_of_integers, 0, len(list_of_integers)-1)
