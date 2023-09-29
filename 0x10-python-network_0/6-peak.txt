@@ -1,4 +1,2 @@
 O(log(n))
 O(n)
-O(nlog(n))
-O(n2)
