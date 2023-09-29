@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-"""Fetches the link"""
+"""It fetches the link"""
 import urllib.request
-
 
 if __name__ == "__main__":
     request = urllib.request.Request("https://intranet.hbtn.io/status")
